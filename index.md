@@ -12,7 +12,7 @@ Summer Semester 2022
 Lecture: Tue 15:00-16:30; G29-K058  
 Exercise: Fri 9:15-10:45; G29-K059
 
-**Start of lectures: Thursday, April 5th**
+**Start of lectures: Tuesday, April 5th**
 
 ---
 

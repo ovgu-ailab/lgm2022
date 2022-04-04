@@ -52,7 +52,7 @@ outputs**. We should not have to run your notebooks to confirm that your code
 works correctly.
 
 - Submissions are handled via 
-Moodle (TBD). Upload your file(s)
+[Moodle](https://elearning.ovgu.de/course/view.php?id=12669). Upload your file(s)
 before the deadline. **Regular submission is obligatory to be admitted to the exam.
 You may miss at most two submissions (excluding the usual
 things like medical reasons, emergencies etc).**

@@ -6,8 +6,8 @@ id: ass0
 
 
 # Assignment 0: Why (And How) Generative Models
-**Discussion: April 9th**  
-**Deadline (optional): April 9th, 9am**
+**Discussion: April 8th**  
+**Deadline (optional): April 8th, 9am**
 
 This first assignment is intended as a refresher on DL models as well as a first
 look at why we might need generative models by
@@ -17,19 +17,23 @@ training/experimentation workflows that you can reuse in later assignments.
 **Please read the entire text carefully for information on submissions etc.**
 
 **This assignment does not need to be handed in. However, if you struggle with
-the contents (particularly part 1), you likely do not fulfill the prerequisites
+the contents of part 1, you likely do not fulfill the prerequisites
 for this class.**
 
 
 ## General Assignment Notes
-- You may work on the assignments in groups (up to three people). They will generally
+- Assignments will generally
 consist of writing code, usually to implement some kind of generative model and
-to apply it/play around with it a little bit. If something is unclear or you run
+to apply it/play around with it a little. If something is unclear or you run
 into trouble, **ask**. Do not spend all week doing nothing! Ask questions on
 Mattermost (or via Gitlab issue) in a _public_ channel since other people might
 have the same question (or be able to provide an answer)!
 
 - Programming must be done in Python 3.x and Tensorflow 2.x.
+
+- Code should be your own. In the event that you take parts of code from elsewhere,
+clearly indicate this and provide a source. Do not copy-paste complete tutorials
+  from elsewhere as your submission. Plagiarism is not permitted!
 
 - Tasks are often deliberately open-ended in order to encourage exploration. Don't
 concern yourself with achieving X% of points. These assignments are for you to
@@ -39,7 +43,7 @@ interesting questions.
 - Unfortunately, we currently cannot supply GPU servers for the class.
 You will have to work on your own machine or with Google Colab. If you need a
 refresher, see the general notes of last semester's IDL class 
-[here](https://ovgu-ailab.github.io/idl2020w/ass1.html). 
+[here](https://ovgu-ailab.github.io/idl2021/ass1.html). 
 
 - For each assignment, your final results should be in a Jupyter notebook. Use 
 images/plots liberally. Also, feel free to use markdown cells to write text to 
@@ -48,7 +52,7 @@ outputs**. We should not have to run your notebooks to confirm that your code
 works correctly.
 
 - Submissions are handled via 
-[Moodle](https://elearning.ovgu.de/course/view.php?id=10030). Upload your file(s)
+Moodle (TBD). Upload your file(s)
 before the deadline. **Regular submission is obligatory to be admitted to the exam.
 You may miss at most two submissions (excluding the usual
 things like medical reasons, emergencies etc).**
@@ -58,8 +62,7 @@ member must upload the solution separately**. Submissions should include
   information on who the group members are. All members needs to be able to
   present the solution (no freeloading!).
 
-- The deadline is generally on Monday morning. Note that it is **not** right
-before the exercise, but a few hours before!
+- The deadline is generally on Friday morning before the exercise.
 
 
 ## Part 1: Revisiting Autoencoders

@@ -65,3 +65,11 @@ lectures:
         - label: reading
           link: reading3.html
 
+  - date: 2022-04-29
+    type:
+    content:
+      - title: Exercise 03
+        slides:
+    assignment:
+      - label: "Assignment 2: Monte Carlo & Gibbs Sampling"
+        link: ass2.html

@@ -7,7 +7,7 @@ id: ass1
 
 # Assignment 1: Probability Review
 **Discussion: April 22nd**  
-**Deadline: April 21nd, 23:59**
+**Deadline: April 21st, 23:59**
 
 NOTE the changed deadline!! To give Jens a chance to look at the submissions before
 the exercise, the deadline will now be the evening before the exercise!

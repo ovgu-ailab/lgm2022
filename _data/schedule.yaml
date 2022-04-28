@@ -85,3 +85,12 @@ lectures:
     assignment:
         - label: reading
           link: reading4.html
+
+  - date: 2022-05-06
+    type:
+    content:
+      - title: Exercise 04
+        slides:
+    assignment:
+      - label: "Assignment 3: Restricted Boltzmann Machines"
+        link: ass3.html

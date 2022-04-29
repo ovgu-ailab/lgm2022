@@ -11,7 +11,7 @@ id: reading4
 * reparametrization trick
 * why this trick is not applicable to discrete stochastic operations
 
-Also have a look at [Kingma & Welling's workshop slides at NIPS 2015 (slides 11-14)](http://dpkingma.com/wordpress/wp-content/uploads/2015/12/talk_nips_workshop_2015.pdf)
+Also have a look at [Kingma & Welling's workshop slides at NIPS 2015 (slides 11-14)](https://web.archive.org/web/20170829170717/http://dpkingma.com/wordpress/wp-content/uploads/2015/12/talk_nips_workshop_2015.pdf)
 
 [Chapter 20.10-20.10.2](http://www.deeplearningbook.org/contents/generative_models.html) on fully directed generative networks and differentiable generator nets (4 pages)
 * structure and (at least one) method of training Sigmoid Belief Nets

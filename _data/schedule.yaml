@@ -94,3 +94,14 @@ lectures:
     assignment:
       - label: "Assignment 3: Restricted Boltzmann Machines"
         link: ass3.html
+
+  - date: 2022-05-10
+    type:
+    content:
+    - title: Advanced VAE Techniques
+      slides:
+    reading:
+    - title: "selected ressources"
+    assignment:
+        - label: reading
+          link: reading5.html

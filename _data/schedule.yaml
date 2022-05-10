@@ -114,3 +114,15 @@ lectures:
     assignment:
       - label: "Assignment 4: Variational Autoencoders"
         link: ass4.html
+
+  - date: 2022-05-19
+    type:
+    content:
+    - title: Generative Adversarial Networks (GANs)
+      slides:
+    reading:
+    - title: "Probabilistic Machine Learning: Advanced Topics -- Chapter 25 up to (including) 25.3"
+      url: https://probml.github.io/pml-book/book2.html
+    assignment:
+        - label: reading
+          link: reading6.html

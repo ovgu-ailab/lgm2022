@@ -112,6 +112,8 @@ improvements from part 1. Some of these mixes might work well, others not at all
     _All_ layers with weights need to have such constraints! 
     Be careful with normalization layers such as Batch Normalization, as these 
     could easily “break” the discriminator by rescaling the outputs to arbitrary ranges.
+  - Usually the discriminator is trained for several steps each time (e.g. 5-10 
+    discriminator steps per generator steps).  
 - [Improved Wasserstein GAN](https://arxiv.org/pdf/1704.00028.pdf)
   - Remove the weight clipping from the WGAN.
   - Add the gradient penalty as described in the paper:
@@ -132,7 +134,10 @@ improvements from part 1. Some of these mixes might work well, others not at all
     in `tensorflow_addons.layers`. You should also remove all other normalization
     layers such as batchnorm from D, and only use "contractive" activation
     functions (ReLU and LeakyReLU are fine).
+  - In principle, you can view this as _enforcing_ a 1-Lipschitz constraint,
+  instead of only regularizing for it as in the WGAN. However, you can use spectral
+    normalization with any kind of GAN loss (cross-entropy, least-squares, Wasserstein...).
 - [Progressive Growing](https://arxiv.org/abs/1710.10196),
   [StyleGAN](https://arxiv.org/abs/1812.04948) or 
   [StyleGAN2](https://arxiv.org/abs/1912.04958) (these will all require 
-  significantly more effort to implement)
+  significantly more effort to implement).

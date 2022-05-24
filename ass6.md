@@ -12,6 +12,10 @@ id: ass6
 
 Guess what, we're doing GANs this time.
 
+**Note:** For this assignment and in general, you can upload more than one notebook
+if you find this better, e.g. to avoid overly long notebooks with a loooong string
+of pretty much independent experiments.
+
 
 ## Basic Setup
 

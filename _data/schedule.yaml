@@ -156,3 +156,14 @@ lectures:
     assignment:
       - label: "Assignment 6/7: Generative Adversarial Networks"
         link: ass6.html
+
+  - date: 2022-05-31
+    type: 
+    content:
+    - title: Autoregressive Networks (ARNs)
+      slides: 
+    reading: 
+    - title: "selected ressources"    
+    assignment:
+        - label: reading
+          link: reading8.html

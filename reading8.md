@@ -14,7 +14,7 @@ id: reading8
 
 ### Optional deeper reading on some successful ARNs
 - [PixelRNN & PixelCNN](https://arxiv.org/abs/1601.06759)
-- WaveNet ([blog post](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), [paper](https://arxiv.org/abs/1609.03499))
+- WaveNet ([blog post](https://deepmind.com/blog/wavenet-a-generative-model-raw-audio/), [paper](https://arxiv.org/abs/1609.03499))
 - [PixelCNN extensions](https://arxiv.org/abs/1606.05328)
 - [parallel WaveNet](https://arxiv.org/abs/1711.10433)
 

@@ -178,3 +178,12 @@ lectures:
     assignment:
         - label: reading
           link: reading9.html
+
+  - date: 2022-06-10
+    type:
+    content:
+      - title: Exercise 10
+        slides:
+    assignment:
+      - label: "Assignment 8: Autoregressive Models"
+        link: ass8.html

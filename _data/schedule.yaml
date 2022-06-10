@@ -199,6 +199,15 @@ lectures:
         - label: reading
           link: reading10.html
 
+  - date: 2022-06-17
+    type:
+    content:
+      - title: Exercise 11
+        slides:
+    assignment:
+      - label: "Assignment 9: Flows"
+        link: ass9.html
+
   - date: 2022-06-21
     type: 
     content:

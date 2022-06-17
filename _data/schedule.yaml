@@ -218,3 +218,12 @@ lectures:
     assignment:
         - label: reading
           link: reading11.html
+
+  - date: 2022-06-24
+    type:
+    content:
+      - title: Exercise 12
+        slides:
+    assignment:
+      - label: "Assignment 10: VQ-VAEs"
+        link: ass10.html

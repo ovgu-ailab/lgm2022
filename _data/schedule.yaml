@@ -238,3 +238,13 @@ lectures:
     assignment:
         - label: reading
           link: reading12.html
+
+
+  - date: 2022-07-01
+    type:
+    content:
+      - title: Exercise 13
+        slides:
+    assignment:
+      - label: "Assignment 11: Diffusion Models"
+        link: ass11.html

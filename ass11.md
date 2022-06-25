@@ -55,7 +55,7 @@ Some possible choices were discussed in the
 exercise, but the large `t` we tend to deal with in diffusion models makes many
 of these infeasible. The paper uses _positional encodings_ similar
 to what was proposed in the original paper on Transformers. You can find sample
-code in the course repository on gitlab (TBD). This codes takes a "batch" of `t` values
+code in the course repository on gitlab. This codes takes a "batch" of `t` values
 and returns the encoding for each, with a desired number of frequencies for the
 sinusoids. You should then broadcast this over the image dimensions, i.e. create
 "feature maps" that are constant over width and height, and where each dimension
@@ -110,4 +110,3 @@ these "latent variables" and reverse the diffusion again. This should produce
 - You should be able to use diffusion models for denoising. However, you would have
 to somehow estimate how much noise is on the image so you can start the reverse
   process at the correct time step. It may also work only for Gaussian noise.
-- Inpainting: TBD  

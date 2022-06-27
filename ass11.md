@@ -32,7 +32,9 @@ as a "noise schedule" `beta_t`. The paper recommends `T = 1000` steps and `beta_
 - You will need to run the forward process for each training step. This would be very
 slow. Luckily, any time step in the process can be sampled directly; see equation 4
   in the paper. For this purpose, compute the `alpha_t` and `alpha_bar_t` as noted
-  in the paper (note `np.cumprod`).
+  in the paper (note `np.cumprod`). Be aware that the paper uses the _covariance matrix_
+  to define normal distributions, but you may need to use the _standard deviation_
+  instead at some points!
 - Test the diffusion process by plotting some data points at intermediate steps 
   `t` (say, every 50 or 100 steps or so). You should be able to see how the data is slowly
   overpowered by noise.
@@ -50,18 +52,39 @@ In the mathematical framework of diffusion models, our network has to be able to
 return different outputs depending on where we are in the process (step `t`).
 Thus, `t` needs to be given as input to the model in some shape or form, or the
 model has to be otherwise conditioned on it. 
-
 Some possible choices were discussed in the
 exercise, but the large `t` we tend to deal with in diffusion models makes many
-of these infeasible. The paper uses _positional encodings_ similar
-to what was proposed in the original paper on Transformers. You can find sample
+of these infeasible. 
+
+- The paper uses _positional encodings_ similar
+to what was proposed in the original paper on Transformers.
+- You can find sample
 code in the course repository on gitlab. This codes takes a "batch" of `t` values
 and returns the encoding for each, with a desired number of frequencies for the
-sinusoids. You should then broadcast this over the image dimensions, i.e. create
+sinusoids.
+-  You should then broadcast this over the image dimensions, i.e. create
 "feature maps" that are constant over width and height, and where each dimension
-of the positional encoding is one channel. Afterwards, concatenate this "constant image"
+of the positional encoding is one channel. 
+- Afterwards, concatenate this "constant image"
 with the channels of the actual input; this is now the input to the model (you can
 also set up a model with two inputs and do the concatenation etc as part of the model).
+- To make the next step a bit easier to think about, it is recommended to normalize
+  the `t` values to [0, 1] (simply divide by your chosen maximum `T`, e.g. 1000).
+- You need to decide what frequencies to use for the sinusoids. 
+  - The provided code
+uses a geometric progression with a factor of 2 (1, 2, 4, 8, 16, ...). 
+  - Only frequencies
+  up to the Nyquist frequency (half the sampling rate) can be represented in a
+  discrete fashion. 
+  - For `T=1000`, this would be a frequency of 500.
+  - 2^9 = 512, so that seems like a reasonable cutoff -- in the given code, that
+    would correspond to choosing 10 frequencies (since we start at 2^0).
+  - With these values, every `t` is mapped to a 20-dimensional positional encoding
+    (10 frequencies with a sine and cosine for each).
+  - If you are interested in learning more about how high-frequency inputs can
+    help neural networks learn more expressive functions, see 
+    [this paper](https://arxiv.org/pdf/1806.08734.pdf) (maths!).
+  
 
 For a working model, it should suffice to add `t` only to the input, but note that
 the paper proposes adding it to _each_ residual block in the model!
@@ -90,7 +113,7 @@ algorithm 2 of the paper.
 - Start with samples drawn from a standard normal distribution
 - Go through the `t` steps _backwards_ (important to apply the correct conditioning
   in the model etc) and apply the formulas. Be mindful of choosing the correct
-  `alpha_t`, `alpha_bar_`, correctly applying square roots (or not), etc.
+  `alpha_t`, `alpha_bar`, correctly applying square roots (or not), etc.
 - The formula mentions a `sigma_t`; possible choices for this are discussed in
 the beginning of section 3.2 of the paper, e.g. `sigma_t = sqrt(beta_t)`
 - Remember that when plotting samples, you should reverse the scaling from before

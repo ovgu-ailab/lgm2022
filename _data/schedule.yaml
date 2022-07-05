@@ -248,3 +248,14 @@ lectures:
     assignment:
       - label: "Assignment 11: Diffusion Models"
         link: ass11.html
+
+  - date: 2022-07-05
+    type: 
+    content:
+    - title: Cycle Consistency
+      slides: 
+    reading: 
+    - title: "selected ressources"
+    assignment:
+        - label: reading
+          link: reading13.html      
